@@ -1,76 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Meal For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel = "stylesheet" href = "s.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="s.css">
+
+    <title>ETSPWEB</title>
 </head>
 <body>
-  
-  <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-search">
-        <h2 class = "title">Find Meals For Your Ingredients</h2>
-        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-          <cite>- Jamie Oliver</cite>
-        </blockquote>
 
-        <div class = "meal-search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-          <button type = "submit" class = "search-btn btn" id = "search-btn">
-            <i class = "fas fa-search"></i>
-          </button>
-        </div>
-      </div>
+<section id="content">
+    <!-- MAIN -->
+    <main>
+			<div class="head-title">
+				<div class="left">
+					<h1>FOREX</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Bintang Wibi Hanoraga - 5025221034</a>
+						</li>
+					</ul>
+				</div>
 
-      <div class = "meal-result">
-        <h2 class = "title">Your Search Results:</h2>
-        <div id= "meal">
-          <!-- meal item -->
-          <!-- <div class = "meal-item">
-            <div class = "meal-img">
-              <img src = "food.jpg" alt = "food">
-            </div>
-            <div class = "meal-name">
-              <h3>Potato Chips</h3>
-              <a href = "#" class = "recipe-btn">Get Recipe</a>
-            </div>
-          </div> -->
-          <!-- end of meal item -->
-        </div>
-      </div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bx-trending-up' ></i>
+					<span class="text">
+						<h3 id="USDEUR">Loading...</h3>
+						<p>USD EUR</p>
+					</span>
+				</li>
+
+				<li>
+					<i class='bx bx-trending-up' ></i>				
+					<span class="text">
+						<h3 id="USDGBP">Loading...</h3>
+						<p>USD GBP</p>
+					</span>
+				</li>
+				<li>
+
+					<i class='bx bx-trending-up' ></i>
+					<span class="text">
+						<h3 id="USDJPY">Loading...</h3>
+						<p>USD JPY</p>
+					</span>
+				</li>
+			</ul>
+
+      <ul class="box-info">
+				<li>
+					<i class='bx bx-trending-up' ></i>
+					<span class="text">
+						<h3 id="USDCHF">Loading...</h3>
+						<p>USD CHF</p>
+					</span>
+				</li>
+
+				<li>
+					<i class='bx bx-trending-up' ></i>
+					<span class="text">
+						<h3 id="USDCAD">Loading...</h3>
+						<p>USD CAD</p>
+					</span>
+				</li>
+				
+				<li>
+
+					<i class='bx bx-trending-up' ></i>
+					<span class="text">
+						<h3 id="USDZAR">Loading...</h3>
+						<p>USD ZAR</p>
+					</span>
+				</li>
+			</ul>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bx-trending-up' ></i>			
+					<span class="text">
+						<h3 id="USDAUD">Loading...</h3>
+						<p>USD AUD</p>
+					</span>
+				</li>
+
+				<li>
+					<i class='bx bx-trending-up' ></i>				
+					<span class="text">
+						<h3 id="USDNZD">Loading...</h3>
+						<p>USD NZD</p>
+					</span>
+				</li>
+				<li>
+
+					<div id="forex-container"></div>
+					<i class='bx bx-trending-up' ></i>				
+					<span class="text">
+						<h3 id="USDAOA">Loading...</h3>
+						<p>USD AOA</p>
+					</span>
+				</li>
 
 
-      <div class = "meal-details">
-        <!-- recipe close btn -->
-        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-          <i class = "fas fa-times"></i>
-        </button>
 
-        <!-- meal content -->
-        <div class = "meal-details-content">
-          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
-          <p class = "recipe-category">Category Name</p>
-          <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-          </div>
-          <div class = "recipe-meal-img">
-            <img src = "food.jpg" alt = "">
-          </div>
-          <div class = "recipe-link">
-            <a href = "#" target = "_blank">Watch Video</a>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- MAIN -->
 
-
-
-  <script src = "script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
