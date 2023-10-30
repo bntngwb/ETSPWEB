@@ -1,5 +1,5 @@
 async function currency() {
-    const response = await fetch(`https://apilayer.net/api/live?access_key=6e28563651cf4eeccf99323884ddb523&pairs=EURUSD,EURGBP,GBPUSD,USDJPY,AUDUSD,USDCHF,NZDUSD,USDCAD,USDZAR`)
+    const response = await fetch(`http://apilayer.net/api/live?access_key=6e28563651cf4eeccf99323884ddb523&pairs=EURUSD,EURGBP,GBPUSD,USDJPY,AUDUSD,USDCHF,NZDUSD,USDCAD,USDZAR`)
     var data = await response.json()
   
     console.log(data)
